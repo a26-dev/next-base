@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <script src="src/components/TodoItem.js" defer></script>
+  <script src="src/components/ExpandableList.js" defer></script>
+  <style>
+    h3 {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3>Hello components!</h3>
+
+  <todo-item checked>
+    Item 1
+    <span slot="description">Woah</span>
+  </todo-item>
+  <todo-item>Item 2</todo-item>
+  <todo-item>Item 3</todo-item>
+
+  <ul is="expandable-list">
+    <li>Ul item 1</li>
+    <li>Ul item 2</li>
+    <li>Ul item 3</li>
+    <ul is="expandable-list">
+      <li>Ul item 1</li>
+      <li>Ul item 2</li>
+      <li>Ul item 3</li>
+    </ul>
+  </ul>
+
+</body>
+</html>
